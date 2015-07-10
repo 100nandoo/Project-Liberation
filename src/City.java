@@ -11,6 +11,7 @@ public class City{
 	boolean innInput=true;
 	int innChoice;
 	private String name;
+	Shop ss = new Shop();
 	Scanner sc = new Scanner(System.in);
 	//-----------Constructor----------
 
