@@ -11,6 +11,13 @@ public class Map {
 	private City[] cityList = new City[3];
 	private int mapChoice=0;
 	private boolean mapStatus = true;
+	
+	//-----------Constructor----------
+	public Map() {
+		cityList[1] = new City("Grommich", 10);
+		cityList[2] = new City("Weldar", 15);
+	}
+	
 	public void openMap(Character p1){
 		do{
 			System.out.println("-----Map Menu-----");
@@ -40,10 +47,6 @@ public class Map {
 	public City getCity(int i){
 		return cityList[i];
 	}
-	//-----------Constructor----------
-	public Map() {
-		cityList[1] = new City("Grommich", 10);
-		cityList[2] = new City("Weldar", 15);
-	}
+
 
 }
