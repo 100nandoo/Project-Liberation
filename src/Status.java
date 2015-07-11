@@ -83,6 +83,17 @@ public class Status {
 	public int getMaxMP() {
 		return maxMP;
 	}
+	
+	//--------------Getter---------------
+	public int getatt(){
+		return Att;
+	}
+	
+	//---------------Setter--------------
+	public void setatt(int newAtt){
+		this.Att = newAtt;
+	}
+	
 
 	
 	//---------------Setter--------------
