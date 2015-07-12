@@ -26,6 +26,7 @@ public class MainGames {
 			System.out.println("2. Visit Inn");
 			System.out.println("3. Open Map");
 			System.out.println("4. Item Shop");
+			System.out.println("5. Cave");
 			i = sc.nextInt();
 			switch(i){
 			case 1: 
@@ -46,6 +47,8 @@ public class MainGames {
 				NorthSacros.openMap(p1);
 			case 4:
 				NorthSacros.getCity(p1.getPosition()).ss.print_menu();
+			case 5: 
+				Cave c = new Cave(p1);
 			}
 			
 		}while(true);
