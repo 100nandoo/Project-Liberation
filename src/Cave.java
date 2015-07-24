@@ -1,10 +1,5 @@
 import java.util.Scanner;
-
-/*
- * Nama			: WILLIAM LINARDI
- * NIM 			: 00000004773
- * Mata Kuliah	: OOP
- */
+import java.awt.Color;
 
 public class Cave{
 	
