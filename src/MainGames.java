@@ -1,18 +1,12 @@
 import java.util.Scanner;
 
-/**
-   Author	: Fernando Fransisko H
-   NIM		: 00000001492
-   Created	: 1:14:22 AM, Jul 5, 2015
- */
-
 public class MainGames {
 
 	public static void main(String[] args) {
 		int i=0;
 		Scanner sc = new Scanner(System.in);
-		Map NorthSacros = new Map();
 		Character p1 = new Character();
+		Map NorthSacros = new Map(p1);
 		System.out.println("Welcome to Liberation Games");
 		System.out.print("Enter your character name? ");
 		p1.setName(sc.nextLine()); 
@@ -26,7 +20,6 @@ public class MainGames {
 			System.out.println("2. Visit Inn");
 			System.out.println("3. Open Map");
 			System.out.println("4. Item Shop");
-			System.out.println("5. Cave");
 			i = sc.nextInt();
 			switch(i){
 			case 1: 
@@ -47,8 +40,6 @@ public class MainGames {
 				NorthSacros.openMap(p1);
 			case 4:
 				NorthSacros.getCity(p1.getPosition()).ss.print_menu();
-			case 5: 
-				Cave c = new Cave(p1);
 			}
 			
 		}while(true);
