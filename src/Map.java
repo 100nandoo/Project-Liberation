@@ -21,7 +21,7 @@ public class Map {
 		cityList[2] = new City("Weldar", 15);
 		caveList[0] = new Cave ("Afrodit");
 		caveList[1] = new Cave ("Exodus");
-		trainingList[0] = new TrainingGround("Si Lau Temple");
+		trainingList[0] = new TrainingGround();
 	}
 	
 	public void openMap(Character p1){
@@ -55,11 +55,11 @@ public class Map {
 					break;
 				case 4:
 					System.out.println("Welcome to " + caveList[1].getName());
-					caveList[1].caveMenu(p1);
+					caveList[1].CaveMenu1(p1);
 					p1.setPosition(mapChoice);
 					break;
 				case 5:
-					trainingList[0].TrainingMenu(p1);
+					trainingList[0].visitTemple(p1);
 					p1.setPosition(mapChoice);
 					break;
 				}
