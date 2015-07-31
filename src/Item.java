@@ -1,9 +1,3 @@
-/**
-   Author	: Fernando Fransisko H
-   NIM		: 00000001492
-   Created	: 2:41:28 PM, Jul 10, 2015
- */
-
 public abstract class Item {
 
 	private String name;
@@ -14,6 +8,7 @@ public abstract class Item {
 		this.setName("default_name");
 		this.price = 1;
 	}
+	
 	
 	//--------------Getter---------------
 	public String getName() {

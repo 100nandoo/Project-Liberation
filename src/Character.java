@@ -1,29 +1,19 @@
-/**
-   Author	: Fernando Fransisko H
-   NIM		: 00000001492
-   Created	: 12:49:51 AM, Jul 5, 2015
- */
-
 public class Character extends Status {
 
-	private int chrm;
 	private int money;
 	private int position;
+	private int exp;
+	private int maxExp;
+	private int lvl;
 	//-----------Constructor----------
 	public Character() {
 		super();
 		this.money = 100;
 		this.position = 1;
-	}
-	
-	//--------------Getter---------------
-	public int getChrm() {
-		return chrm;
-	}
-	
-	//---------------Setter--------------
-	public void setChrm(int chrm) {
-		this.chrm = chrm;
+		this.setMaxExp(100);
+		this.exp = 0;
+		this.exp = 1;
+		this.lvl = 1; 
 	}
 
 	
@@ -52,9 +42,35 @@ public class Character extends Status {
 
 	public void print(){
 		super.print();
-		System.out.println("Chrm	= " + chrm + "	-");
-		System.out.println("Position= " + position + "	-");
+		System.out.println("Lvl		= " + lvl + "		-");
+		System.out.println("Position= " + position + "		-");
 		System.out.println("Money	= " + money + "$" + "	-");
+		System.out.println("Exp     = " + exp + "/" + maxExp + "	-");
 		System.out.println("-----------------");
 	}
+
+	public int getExp() {
+		return exp;
+	}
+
+	public void setExp(int exp) {
+		this.exp = exp;
+	}
+
+	public int getMaxExp() {
+		return maxExp;
+	}
+
+	public void setMaxExp(int maxExp) {
+		this.maxExp = maxExp;
+	}
+
+	public int getLvl() {
+		return lvl;
+	}
+
+	public void setLvl(int lvl) {
+		this.lvl = lvl;
+	}
+	
 }

@@ -1,11 +1,5 @@
 import java.util.Scanner;
 
-/**
-   Author	: Fernando Fransisko H
-   NIM		: 00000001492
-   Created	: 3:18:32 PM, Jul 10, 2015
- */
-
 public class Shop {
 	Scanner sc = new Scanner(System.in);
 	private int shopChoice=0;

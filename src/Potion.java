@@ -1,9 +1,3 @@
-/**
-   Author	: Fernando Fransisko H
-   NIM		: 00000001492
-   Created	: 2:52:55 PM, Jul 10, 2015
- */
-
 public class Potion extends Item{
 
 	private int effect_poin;
