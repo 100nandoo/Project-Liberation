@@ -47,7 +47,8 @@ public class College {
             System.out.println("4. Gollur the Might");
             System.out.println("5. Visar the Bright");
             System.out.println("6. Tovast the Witch");
-            System.out.println("7. Exit");
+            System.out.println("7. Prologue");
+            System.out.println("8. Exit");
             System.out.println("----------------------------");
             libraryChoice = sc.nextInt();
             switch (libraryChoice){
@@ -55,10 +56,13 @@ public class College {
                     Bremar();
                     break;
                 case 2:
-
+                    Stanmar();
                     break;
                 case 3:
-                    System.out.println("");
+                    Vallarth();
+                    break;
+                case 4:
+                    Gollur();
                     break;
                 case 7:
 
@@ -109,6 +113,22 @@ public class College {
         System.out.println("On the tongues of men, Vallarth leader can see a person past.");
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("Enter 1 to finish reading the book");
+        bookChoice = sc.nextInt();
+        if(bookChoice != 1) Bremar();
+    }
+
+    public void Gollur(){
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~Gollur the Might~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("Gollur Valahar, born as Bremar, has spend most of his life in the");
+        System.out.println("wilderness. Since the young age has shown his remarkable running ");
+        System.out.println("speed and his accuracy throwing hunting spear. Although he's famous");
+        System.out.println("in his village, Gollur spend most of his time in solitude. He would");
+        System.out.println("climb over a tall tree and start sinking into himself.");
+        System.out.println("At the age of 21, he left his village behind and start to try the ");
+        System.out.println("Sacred Path to lift the cursed by Tovast. 20 years later, he ");
+        System.out.println("came back to his village and show that he didn't have cursed marked ");
+        System.out.println("anymore. He died on the age of 50 in his favorite tree. The cause");
+        System.out.println("of his death is still unknown.");
         bookChoice = sc.nextInt();
         if(bookChoice != 1) Bremar();
     }
