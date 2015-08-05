@@ -8,6 +8,7 @@ import java.io.IOException;
  */
 public class College {
     private boolean con=true;
+    private boolean lc=true;
     private int choice;
     private int bookChoice;
     private int lt=2000;
@@ -65,10 +66,12 @@ public class College {
                     Gollur();
                     break;
                 case 7:
-
                     break;
+                case 8:
+                	lc=false;
+                	break;
             }
-        }while(true);
+        }while(lc);
 
     }
 
