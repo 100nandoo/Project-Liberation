@@ -16,22 +16,20 @@ So you type "1" press enter, and the game will open the "Show status" menu.
 ### World
 This is the game world tree looks like.
 ```
-project
-│   README.md
-│   file001.txt    
-│
-└───folder1
-│   │   file011.txt
-│   │   file012.txt
-│   │
-│   └───subfolder1
-│       │   file111.txt
-│       │   file112.txt
-│       │   ...
-│   
-└───folder2
-    │   file021.txt
-    │   file022.txt
+World
+|   Grommich City
+|   └───City Inn
+|   Weldar City
+|   └───City Inn
+|   Afrodit Cave
+|   Exodus Cave
+│   Si Lau Temple
+|   Gatoo Inn
+|   Cranera Inn
+|   Carrocos Mega City
+|   └───City Inn
+|   └───Sacred Temple
+|   └───College
 ```
 
 # Author
