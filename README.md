@@ -14,7 +14,7 @@ You will be greet by an opening story, and then you start in a city. You interac
 
 So you type "1" press enter, and the game will open the "Show status" menu.
 
-### World
+### World Tree
 This is the game world tree looks like.
 ```
 World
@@ -32,6 +32,26 @@ World
 |   └───Sacred Temple
 |   └───College
 ```
+
+### Class Structure
+From the development perspective the class structure looks like this:
+```
+Main Games Class
+|   City Class
+|   └───Status Class
+|   └───Inn Class
+|   Cave Class
+|   └───Monster Class
+|   └───Status Class
+│   Training Ground Class
+|   Inn Class
+|   Mega City Class
+|   └───Inn Class
+|   └───Training Ground Class
+|   └───College Class
+```
+
+There is a missname in Temple class, instead of using "Temple Class" we name it, "TrainingGround Class". Also the "shop, item, HP_Potion"  classes is not use, because the code is still buggy.
 
 # Author
 1. Adrian Koeswanto --> create the shop classes, item class and provide snack when we're developing the games.
